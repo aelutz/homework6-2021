@@ -1,5 +1,132 @@
 /*this is my style.css page*/
 
-h1 {
-	/*here is an example of an h1 selector*/
+/*mobile first*/
+body {
+	font-family: Alegreya Sans SC, serif;
+	background-image: url("../images/concrete_seamless.png");
+	background-color: #f1f1f1;
 }
+
+
+header {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+
+a:link {
+	color: blue;
+}
+
+
+a:visited {
+  color: blue;
+}
+
+
+.nav_links {
+	justify-self: center;
+
+}
+
+.card header {
+	background: #288088;
+	border: solid 2px #45ADAD;
+	padding-top:  20px;
+	padding-bottom: 20px;
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+
+}
+
+
+.pricing {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+
+.card {
+	flex-basis: 450px;
+	
+
+}
+
+
+.gallery img{
+	border: solid 10px #50C7C7;
+	margin:  10px;
+	width:  300px;
+	display: flex;
+
+
+}
+
+
+.gallery {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+
+
+#logo {
+	animation-name: logo-animation;
+	animation-duration: 5s;
+
+
+}
+
+@keyframes logo-animation {
+	from{
+		width: 50px;
+		opacity: 0;
+	}
+	to{
+		width:  425px;
+		opacity: 1;
+	}
+
+}
+
+/*now for screens greater than 850px*/
+
+
+@media screen and (min-width: 850px) {
+
+	header {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+
+	}
+
+	.nav_links li{
+		display: inline;
+	
+	}
+
+
+	.card {
+		/*flex-flow: row;*/
+		flex-basis: 250px;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
