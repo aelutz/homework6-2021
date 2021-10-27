@@ -51,6 +51,7 @@ a:visited {
 
 .card {
 	flex-basis: 450px;
+	z-index: -1;
 	
 
 }
@@ -104,8 +105,10 @@ a:visited {
 		justify-content: space-between;
 		position: sticky;
 		top: 0;
+		z-index: 999;
 
 	}
+
 
 	.nav_links li{
 		display: inline;
@@ -113,8 +116,15 @@ a:visited {
 	}
 
 
+	.pricing {
+		display: flex;
+		flex-flow: row nowrap;
+
+	}
+
 	.card {
-		/*flex-flow: row;*/
+		display: flex;
+		flex-flow: column;
 		flex-basis: 250px;
 	}
 
