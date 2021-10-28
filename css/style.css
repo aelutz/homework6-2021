@@ -152,21 +152,39 @@ a:visited {
 
 
 /*print view*/
-@media print {
+/*@media screen and (min-width: 1000px) {*/
+ @media print {
 	body {
 		background-image: none;
 	}
 
-	/*.nav_links {
+
+	nav {
+
+		width: 100%;
+	}
+	.nav_links {
 		display: flex;
-		justify-content: space-between;
-	}*/
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
 	.pricing {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		align-items: flex-end;
+	}
+
+	.card {
+		diplay: flex;
+		border: solid 2px #45ADDD;
+		flex-basis: 250px;
+	}
+
+
+	#gallery, .gallery {
+		display: none;
 	}
 }	
 
