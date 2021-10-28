@@ -54,9 +54,10 @@ a:visited {
 /*instruction 8*/
 .pricing {
 	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-items: center;
+	align-items: center;
 }
 
 /*instruction 9*/
